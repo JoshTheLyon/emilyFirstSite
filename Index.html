@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Some Jokes</title>
+</head>
+<body>
+    <h1>Knock Knock Jokes</h1>
+    <br>
+    <div class="jokeContainer">
+        <div>
+            <b>Knock Knock</b>
+            <p>Who's There?</p>
+            <b>Isobel</b>
+            <div class="punchline">
+                <p>Isobel who?</p>
+                <b>Isobel broken because I had to knock</b>
+                <br>
+                <div class="showPunchline">Show Punchline</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="jokeContainer">
+        <div>
+            <b>Knock Knock</b>
+            <p>Who's There?</p>
+            <b>Isobel</b>
+            <div class="punchline">
+                <p>Isobel who?</p>
+                <b>Isobel broken because I had to knock</b>
+                <br>
+                <div class="showPunchline">Show Punchline</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+<style>
+    body {
+        font-family: sans-serif;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-color: rgb(74, 223, 243);
+        text-align: center;
+    }
+
+    h1 {
+        text-align: center;
+        display: block;
+        width: max-content;
+        margin: auto;
+    }
+    .jokeContainer {
+        background-color: rgb(211, 211, 211);
+        border: 2px solid rgb(0, 0, 0);
+        border-radius: 2rem 1rem;
+        text-align: center;
+        width: 75%;
+        margin: 2rem auto;
+        padding: 1rem;
+    }
+
+    .punchline {
+        position: relative;
+    }
+
+    .punchline:hover {
+    }
+
+    .punchline > * {
+        color: transparent;
+    }
+
+    .punchline:hover > * {
+        color: unset;
+    }
+
+    .punchline > .showPunchline {
+        display: grid;
+        place-items: center;
+        color: unset;
+        background-color: turquoise;
+        border: solid 2px black;
+        border-radius: 30px;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+    }
+
+    .punchline:hover > .showPunchline {
+        display: none;
+    }
+
+</style>
+
